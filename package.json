@@ -1,0 +1,51 @@
+{
+    "name": "@stackbit/eslint-config",
+    "version": "0.1.1",
+    "description": "Stackbit's shareable config for ESLint",
+    "author": "Stackbit Inc.",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/stackbithq/eslint-config.git"
+    },
+    "homepage": "https://github.com/stackbithq/eslint-config#readme",
+    "bugs": {
+        "url": "https://github.com/stackbithq/eslint-config/issues"
+    },
+    "engines": {
+        "node": "^10.16.0",
+        "npm": "^6.9.0"
+    },
+    "main": "eslint.config.js",
+    "scripts": {
+        "lint": "npm-run-all --parallel lint:*",
+        "lint:js": "eslint --cache --fix --ext .js,.jsx .",
+        "lint:css": "stylelint --fix \"**/*.{css,scss}\"",
+        "dry-release": "npmpub --dry --verbose",
+        "release": "npmpub --no-release"
+    },
+    "dependencies": {
+        "eslint-config-prettier": "^6.0.0",
+        "eslint-config-prettier-standard": "^3.0.1",
+        "eslint-config-standard": "^12.0.0",
+        "eslint-config-standard-react": "^7.0.2",
+        "eslint-plugin-import": "^2.18.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-node": "^9.1.0",
+        "eslint-plugin-prettier": "^3.1.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-react": "^7.14.3",
+        "eslint-plugin-standard": "^4.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "npm-run-all": "^4.1.5",
+        "npmpub": "^4.1.0",
+        "prettier": "1.18.2",
+        "stylelint": "^10.1.0"
+    },
+    "peerDependencies": {
+        "eslint": "^5.16.0",
+        "prettier": "1.18.2"
+    }
+}
