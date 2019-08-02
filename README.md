@@ -27,7 +27,7 @@ Now you can run ESLint by adding the following linting script to your `package.j
 
 ```json
 "scripts": {
-  "lint:js": "eslint --cache --fix --ext .js,.jsx ."
+  "lint:js": "eslint --cache --ext .js,.jsx ."
 }
 ```
 
