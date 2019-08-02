@@ -6,6 +6,7 @@ module.exports = {
     },
     extends: [
         'eslint:recommended',
+        'plugin:react/recommended',
         'standard',
         'standard-react',
         'plugin:prettier/recommended',
