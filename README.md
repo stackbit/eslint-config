@@ -23,18 +23,25 @@ Stackbit's ESLint rules come bundled in `@stackbit/eslint-config`. To enable the
 }
 ```
 
-Now you can run ESLint by adding the following linting script to your `package.json`. See the [ESLint CLI docs](https://eslint.org/docs/user-guide/command-line-interface) for more details.
+Now you can run ESLint by adding the following scripts to your `package.json`. See the [ESLint CLI docs](https://eslint.org/docs/user-guide/command-line-interface) for more details.
 
 ```json
 "scripts": {
-  "lint:js": "eslint --cache --ext .js,.jsx ."
+  "lint:js": "eslint --cache --ext .js,.jsx .",
+  "format:js": "npm run lint:js -- --fix"
 }
 ```
 
-Run it:
+Lint it:
 
 ```
 npm run lint:js
+```
+
+Format it:
+
+```
+npm run format:js
 ```
 
 ## [CHANGELOG](CHANGELOG.md)
