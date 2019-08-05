@@ -15,7 +15,7 @@ module.exports = {
         'plugin:jsx-a11y/recommended'
     ],
     rules: {
-        'no-unused-vars': ['error', { vars: 'all', args: 'all', ignoreRestSiblings: true }],
+        'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
         'import/order': ['error', { groups: ['builtin', 'external', 'parent', 'sibling', 'index'] }],
         'react/display-name': 0
     }
